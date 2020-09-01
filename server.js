@@ -2,7 +2,7 @@ const {
     app,
     startDatabase,
 } = require('./app-common.js')
-
+ 
 // endpoint to return top level api
 // much like a switch statement
 app.get('/', async (req, res) => {

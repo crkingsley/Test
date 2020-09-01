@@ -20,6 +20,7 @@ app.use(helmet());
 // handler functions can easily work with that incoming data
 app.use(bodyParser.json());
 
+
 // enabling CORS for  all requests (not very secure)
 app.use(cors());
 

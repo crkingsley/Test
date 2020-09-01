@@ -1,7 +1,7 @@
 const { getDatabase } = require('./mongo-common');
 // https://docs.mongodb.com/manual/reference/method/ObjectId/
 const { ObjectID } = require('mongodb');
-
+ 
 // a "collection" in mongo is a lot like a list which is a lot like an Array
 const collectionName = 'recipes';
 

@@ -6,6 +6,7 @@ router.get('/', async (apiRequest, apiResponse) => {
     apiResponse.send(await getRecipes());
 });
 
+
 // we name our parameters apiRequest and apiResponse here but
 // there is no strong reason these variables could not be named `req` and `res` or `request` and `response`
 // the reason for this naming is so we are thinking about "api" tonight
