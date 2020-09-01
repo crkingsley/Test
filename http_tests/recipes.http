@@ -1,0 +1,29 @@
+### Test the recipes
+
+GET http://localhost:3000/recipes
+
+### Test creating a recipe
+POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+  "petBreed": "cat",
+  "recipeName": "Tuna Treats",
+  "ingredients": ["1 cup flour", "1 can tuna", "1 egg", "1/4 cup shredded cheese"],
+  "directions": ["1. Preheat oven to 350.", "2. Mix until completely combined", "3. Spread"],
+}
+### Test the PUT which should change a recipe
+
+PUT http://localhost:3000/recipes/5f2caf7675484233a07a8584
+Content-Type: application/json
+
+{
+    "notes": ["use a pizza cutter to cut into small pieces"]
+}
+
+### Test the DELETE which should remove a store
+
+
+DELETE http://localhost:3000/recipes/5f2caf7675484233a07a8584
+Content-Type: application/json
+
